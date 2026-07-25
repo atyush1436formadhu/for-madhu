@@ -143,4 +143,117 @@ Open My Heart ❤️
 
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Madhu ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ffb6c1,#ffd6e8,#fff0f5);
+overflow:hidden;
+}
+
+.card{
+width:90%;
+max-width:430px;
+padding:35px;
+background:rgba(255,255,255,.35);
+backdrop-filter:blur(15px);
+border-radius:25px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+animation:fade 1.2s;
+}
+
+h1{
+color:#ff2d75;
+margin-bottom:15px;
+}
+
+p{
+font-size:18px;
+line-height:1.6;
+margin-bottom:25px;
+color:#444;
+}
+
+button{
+background:#ff2d75;
+color:white;
+border:none;
+padding:14px 30px;
+border-radius:50px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>💌 For Madhu ❤️</h1>
+
+<p id="text">
+Someone loves you more than words can ever explain...
+</p>
+
+<button onclick="nextPage()">
+Open My Heart ❤️
+</button>
+
+</div>
+
+<script>
+
+let step=0;
+
+function nextPage(){
+
+step++;
+
+if(step==1){
+
+document.getElementById("text").innerHTML=
+"I know I really messed up...<br><br>and I'm really sorry for that babe..🫠";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
 
