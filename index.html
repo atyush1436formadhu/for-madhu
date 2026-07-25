@@ -1,399 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>For Madhu ❤️</title>
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-
-min-height:100vh;
-background:
-radial-gradient(circle at top,#ff7eb3,#6a0032 45%,#12000a);
-color:white;
-overflow-x:hidden;
-
+    background:linear-gradient(135deg,#000,#2b0015);
+    color:white;
+    text-align:center;
+    min-height:100vh;
+    overflow-x:hidden;
 }
-
 
 .container{
-
-padding:25px;
-text-align:center;
-
+    padding:30px 20px;
 }
-
-
-.card{
-
-background:rgba(255,255,255,0.12);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,0.2);
-border-radius:30px;
-padding:35px 25px;
-max-width:500px;
-margin:40px auto;
-box-shadow:0 0 40px rgba(255,0,120,.35);
-
-animation:appear 1.5s ease;
-
-}
-
 
 h1{
-
-font-size:38px;
-margin-bottom:20px;
-
+    font-size:40px;
+    margin-top:30px;
+    color:#ffb6c1;
 }
-
-
-h2{
-
-font-size:28px;
-margin-bottom:20px;
-
-}
-
 
 p{
-
-font-size:18px;
-line-height:1.8;
-
+    font-size:18px;
+    margin:20px 0;
+    line-height:1.6;
 }
 
-
-button{
-
-margin-top:30px;
-padding:16px 40px;
-border:none;
-border-radius:50px;
-background:#ff4f91;
-color:white;
-font-size:18px;
-cursor:pointer;
-box-shadow:0 0 25px #ff4f91;
-
+.slideshow{
+    margin:30px auto;
+    width:90%;
+    max-width:400px;
 }
 
-
-button:hover{
-
-transform:scale(1.08);
-
+.slideshow img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(255,105,180,0.5);
+    animation:fade 1.5s;
 }
-
-
-.hidden{
-
-display:none;
-
-}
-
-
-.fade{
-
-animation:fade 2s ease;
-
-}
-
 
 @keyframes fade{
-
-from{
-opacity:0;
-transform:translateY(40px);
+    from{opacity:0.3;}
+    to{opacity:1;}
 }
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-
-}
-
-
-
-@keyframes appear{
-
-from{
-opacity:0;
-transform:scale(.8);
-}
-
-to{
-opacity:1;
-transform:scale(1);
-}
-
-}
-
-
-
-.envelope{
-
-font-size:80px;
-animation:float 2s infinite alternate;
-
-}
-
-
-@keyframes float{
-
-from{
-transform:translateY(0);
-}
-
-to{
-transform:translateY(-15px);
-}
-
-}
-
 
 .heart{
-
-position:fixed;
-bottom:-20px;
-font-size:25px;
-animation:heartMove linear infinite;
-
+    font-size:45px;
+    animation:beat 1s infinite;
 }
 
-
-@keyframes heartMove{
-
-0%{
-
-transform:translateY(0);
-opacity:1;
-
+@keyframes beat{
+    50%{transform:scale(1.2);}
 }
 
-100%{
-
-transform:translateY(-110vh);
-opacity:0;
-
+footer{
+    margin-top:40px;
+    font-size:14px;
+    color:#ddd;
 }
-
-}
-
-
-
-.glow{
-
-color:#ffd6e8;
-text-shadow:0 0 20px pink;
-
-}
-
-
 </style>
 
 </head>
 
-
 <body>
+
+<audio autoplay loop>
+<source src="music/Bulleya Sultan 128 Kbps.mp3" type="audio/mpeg">
+</audio>
 
 
 <div class="container">
 
+<div class="heart">❤️</div>
 
-<div class="card">
-
-<div class="envelope">
-💌
-</div>
-
-<h1>
-For Madhu ❤️
-</h1>
-
+<h1>For Madhu</h1>
 
 <p>
-Someone loves you more than words can ever explain...
+Some memories are not just photos...<br>
+they are feelings that stay forever.
 </p>
 
 
-<button onclick="openHeart()">
+<div class="slideshow">
 
-Open My Heart 💗
-
-</button>
-
-
-</div>
-<div id="letter" class="card hidden fade">
-
-<h2 class="glow">
-Madhu ❤️
-</h2>
-
-
-<p>
-
-I know I really messed up...
-
-<br><br>
-
-I know sometimes I make mistakes,
-and sometimes I don't express my feelings the way I should.
-
-<br><br>
-
-But one thing I want you to remember...
-
-<br><br>
-
-You are one of the most beautiful parts of my life.
-
-<br><br>
-
-Thank you for staying with me.
-Thank you for understanding me.
-Thank you for being my Madhu.
-
-<br><br>
-
-I am not perfect...
-
-but I promise I will always try to become a better version of myself for you.
-
-</p>
-
-
-<br>
-
-<p>
-Your annoying but forever yours 🤧❤️
-</p>
-
+<img id="photo" src="images/IMG-20260110-WA0017.jpg">
 
 </div>
 
 
-
-<div id="ending" class="card hidden fade">
-
-
-<h2 class="glow">
-One Last Promise 🌙
-</h2>
-
-
 <p>
-
-No matter how many mistakes happen...
-
-<br><br>
-
-No matter how many fights come...
-
-<br><br>
-
-I will always choose you.
-
-<br><br>
-
-Today.
-
-Tomorrow.
-
-And every day after that.
-
+Thank you for being a beautiful part of my life ❤️
 </p>
 
 
-<br>
-
-
-<h1>
-Forever your Gawar ❤️
-</h1>
-
-
-</div>
-
+<footer>
+Made with love ❤️
+</footer>
 
 </div>
 
 
 <script>
 
+let photos = [
 
-function openHeart(){
+"images/IMG-20260110-WA0017.jpg",
 
+"images/IMG_20260725_210228.jpg",
 
-document.getElementById("letter")
-.classList.remove("hidden");
+"images/IMG_20260725_210908.jpg",
 
+"images/IMG_20260725_211330.jpg",
 
-setTimeout(()=>{
+"images/Snapchat-1807302573.jpg",
 
-document.getElementById("ending")
-.classList.remove("hidden");
+"images/Snapchat-789172147.jpg",
 
+"images/file_000000005e1c71fa9b9fbc840b4230ce.png",
 
-window.scrollTo({
+"images/photol.jpg"
 
-top:document.body.scrollHeight,
-
-behavior:"smooth"
-
-});
+];
 
 
-},2000);
+let index=0;
+
+let img=document.getElementById("photo");
 
 
+setInterval(()=>{
 
-for(let i=0;i<35;i++){
+index++;
 
-
-let heart=document.createElement("div");
-
-
-heart.className="heart";
-
-
-heart.innerHTML="❤️";
-
-
-heart.style.left=Math.random()*100+"vw";
-
-
-heart.style.animationDuration=
-(3+Math.random()*4)+"s";
-
-
-document.body.appendChild(heart);
-
-
-
+if(index>=photos.length){
+index=0;
 }
 
+img.src=photos[index];
 
-
-}
-
+},3000);
 
 
 </script>
-
 
 </body>
 </html>
