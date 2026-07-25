@@ -1,49 +1,183 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>For Madhu ❤️</title>
 
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<div class="intro">
-    <h1>For Madhu ❤️</h1>
-    <p>A little world made only for you...</p>
-    <button onclick="start()">Open Memories ✨</button>
-</div>
 
-
-<div class="page" id="page">
+<div class="music-box">
 
 <audio id="music" loop>
-<source src="music/Bulleya Sultan 128 Kbps.mp3">
+<source src="music/Bulleya Sultan 128 Kbps.mp3" type="audio/mpeg">
 </audio>
 
-
-<h1 class="title">Our Memories ❤️</h1>
-
-
-<div class="photo-box">
-<img id="photo" src="images/IMG-20260110-WA0017.jpg">
 </div>
 
 
-<p class="message">
-Some moments become memories,<br>
-some people become home ❤️
+
+<section class="page active">
+
+<h1>For Madhu ❤️</h1>
+
+<p>
+I made this little world for you...<br>
+Please read this till the end.
+</p>
+
+<button onclick="nextPage()">
+Open My Heart ❤️
+</button>
+
+</section>
+
+
+
+
+<section class="page">
+
+<h1>I'm Sorry Madhu ❤️</h1>
+
+<p>
+I know I made a mistake.<br><br>
+
+I am truly sorry for texting another person
+and bringing someone else into our relationship.
+
+I understand that it hurt you and affected
+the trust between us.
 </p>
 
 
-<button onclick="playMusic()">🎵 Play Music</button>
+<button onclick="nextPage()">
+Read More ❤️
+</button>
 
+</section>
+
+
+
+
+
+<section class="page">
+
+<h1>What I Want You To Know</h1>
+
+<p>
+
+I don't want to make excuses for my mistake.
+
+I just want you to know that I understand
+your feelings and your pain.
+
+Your trust means a lot to me.
+
+</p>
+
+
+<button onclick="nextPage()">
+My Promise ✨
+</button>
+
+</section>
+
+
+
+
+
+<section class="page">
+
+<h1>My Promise To You ❤️</h1>
+
+
+<p>
+
+I promise I will be more careful with my actions.
+
+I will respect our relationship and I will make sure
+that I never repeat something that can hurt you again.
+
+</p>
+
+
+<button onclick="nextPage()">
+Our Memories 📸
+</button>
+
+
+</section>
+
+
+
+
+
+
+<section class="page">
+
+<h1>Our Beautiful Memories ❤️</h1>
+
+
+<div class="photo-container">
+
+<img id="photo" src="images/IMG-20260110-WA0017.jpg">
 
 </div>
 
 
+<button onclick="playMusic()">
+🎵 Play Our Song
+</button>
+
+
+<button onclick="nextPage()">
+One Last Thing ❤️
+</button>
+
+
+</section>
+
+
+
+
+
+
+<section class="page">
+
+
+<h1>One Last Thing ❤️</h1>
+
+
+<p>
+
+I know saying sorry cannot erase the hurt immediately.
+
+I just hope you can see how much I care
+and how much I want to make things right.
+
+</p>
+
+
+<h2>
+I hope you can forgive me ❤️
+</h2>
+
+
+</section>
+
+
+
+
+
 <script src="script.js"></script>
+
 
 </body>
 </html>
