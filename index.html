@@ -1,161 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>For Madhu ❤️</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
-
-body{
-    background:linear-gradient(135deg,#000,#2b0015);
-    color:white;
-    text-align:center;
-    min-height:100vh;
-    overflow-x:hidden;
-}
-
-.container{
-    padding:30px 20px;
-}
-
-h1{
-    font-size:40px;
-    margin-top:30px;
-    color:#ffb6c1;
-}
-
-p{
-    font-size:18px;
-    margin:20px 0;
-    line-height:1.6;
-}
-
-.slideshow{
-    margin:30px auto;
-    width:90%;
-    max-width:400px;
-}
-
-.slideshow img{
-    width:100%;
-    height:450px;
-    object-fit:cover;
-    border-radius:20px;
-    box-shadow:0 0 25px rgba(255,105,180,0.5);
-    animation:fade 1.5s;
-}
-
-@keyframes fade{
-    from{opacity:0.3;}
-    to{opacity:1;}
-}
-
-.heart{
-    font-size:45px;
-    animation:beat 1s infinite;
-}
-
-@keyframes beat{
-    50%{transform:scale(1.2);}
-}
-
-footer{
-    margin-top:40px;
-    font-size:14px;
-    color:#ddd;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<audio autoplay loop>
-<source src="music/Bulleya Sultan 128 Kbps.mp3" type="audio/mpeg">
+<div class="intro">
+    <h1>For Madhu ❤️</h1>
+    <p>A little world made only for you...</p>
+    <button onclick="start()">Open Memories ✨</button>
+</div>
+
+
+<div class="page" id="page">
+
+<audio id="music" loop>
+<source src="music/Bulleya Sultan 128 Kbps.mp3">
 </audio>
 
 
-<div class="container">
-
-<div class="heart">❤️</div>
-
-<h1>For Madhu</h1>
-
-<p>
-Some memories are not just photos...<br>
-they are feelings that stay forever.
-</p>
+<h1 class="title">Our Memories ❤️</h1>
 
 
-<div class="slideshow">
-
+<div class="photo-box">
 <img id="photo" src="images/IMG-20260110-WA0017.jpg">
-
 </div>
 
 
-<p>
-Thank you for being a beautiful part of my life ❤️
+<p class="message">
+Some moments become memories,<br>
+some people become home ❤️
 </p>
 
 
-<footer>
-Made with love ❤️
-</footer>
+<button onclick="playMusic()">🎵 Play Music</button>
+
 
 </div>
 
 
-<script>
-
-let photos = [
-
-"images/IMG-20260110-WA0017.jpg",
-
-"images/IMG_20260725_210228.jpg",
-
-"images/IMG_20260725_210908.jpg",
-
-"images/IMG_20260725_211330.jpg",
-
-"images/Snapchat-1807302573.jpg",
-
-"images/Snapchat-789172147.jpg",
-
-"images/file_000000005e1c71fa9b9fbc840b4230ce.png",
-
-"images/photol.jpg"
-
-];
-
-
-let index=0;
-
-let img=document.getElementById("photo");
-
-
-setInterval(()=>{
-
-index++;
-
-if(index>=photos.length){
-index=0;
-}
-
-img.src=photos[index];
-
-},3000);
-
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
