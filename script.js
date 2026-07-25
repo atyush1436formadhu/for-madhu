@@ -1,3 +1,39 @@
+let pages = document.querySelectorAll(".page");
+
+let currentPage = 0;
+
+
+function nextPage(){
+
+pages[currentPage].classList.remove("active");
+
+currentPage++;
+
+
+if(currentPage >= pages.length){
+
+currentPage = pages.length - 1;
+
+}
+
+
+pages[currentPage].classList.add("active");
+
+
+}
+
+
+
+function playMusic(){
+
+let music = document.getElementById("music");
+
+music.play();
+
+}
+
+
+
 
 let photos = [
 
@@ -20,28 +56,10 @@ let photos = [
 ];
 
 
-let current = 0;
+let photoIndex = 0;
 
 
 let photo = document.getElementById("photo");
-
-
-function start(){
-
-document.querySelector(".intro").style.display="none";
-
-document.getElementById("page").style.display="block";
-
-}
-
-
-function playMusic(){
-
-let music=document.getElementById("music");
-
-music.play();
-
-}
 
 
 
@@ -50,21 +68,24 @@ setInterval(()=>{
 
 if(photo){
 
+
 photo.style.opacity="0";
 
 
 setTimeout(()=>{
 
-current++;
 
-if(current >= photos.length){
+photoIndex++;
 
-current=0;
+
+if(photoIndex >= photos.length){
+
+photoIndex = 0;
 
 }
 
 
-photo.src=photos[current];
+photo.src = photos[photoIndex];
 
 
 photo.style.opacity="1";
