@@ -1,1 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#000000,#300018);
+    color:white;
+    overflow:hidden;
+    text-align:center;
+}
+
+
+.intro{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    animation:fadeIn 2s ease;
+}
+
+
+.intro h1{
+    font-size:45px;
+    color:#ffb6c1;
+    animation:heartBeat 2s infinite;
+}
+
+
+.intro p{
+    margin:20px;
+    font-size:20px;
+    opacity:0.9;
+}
+
+
+button{
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ff4f81;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    box-shadow:0 0 20px #ff4f81;
+    transition:.4s;
+}
+
+
+button:hover{
+    transform:scale(1.1);
+}
+
+
+.page{
+    display:none;
+    padding:30px 20px;
+    animation:slideUp 1.5s ease;
+}
+
+
+.title{
+    font-size:38px;
+    color:#ffb6c1;
+    margin:20px;
+}
+
+
+.photo-box{
+    width:90%;
+    max-width:380px;
+    height:480px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:25px;
+    box-shadow:0 0 40px rgba(255,100,150,.6);
+}
+
+
+.photo-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation:zoom 4s infinite alternate;
+    transition:1s;
+}
+
+
+
+.message{
+    margin:30px;
+    font-size:20px;
+    line-height:1.6;
+}
+
+
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+
+
+@keyframes slideUp{
+
+from{
+transform:translateY(100px);
+opacity:0;
+}
+
+to{
+transform:translateY(0);
+opacity:1;
+}
+
+}
+
+
+
+@keyframes zoom{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.08);
+}
+
+}
+
+
+
+@keyframes heartBeat{
+
+50%{
+transform:scale(1.1);
+}
+
+}
