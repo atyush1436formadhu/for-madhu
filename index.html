@@ -1,184 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>For Madhu ❤️</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    min-height:100vh;
-    background:linear-gradient(135deg,#1a0010,#4b0025,#800040);
-    color:white;
-    overflow-x:hidden;
+
+min-height:100vh;
+background:
+radial-gradient(circle at top,#ff7eb3,#6a0032 45%,#12000a);
+color:white;
+overflow-x:hidden;
+
 }
+
 
 .container{
-    padding:25px;
-    text-align:center;
+
+padding:25px;
+text-align:center;
+
 }
+
 
 .card{
-    background:rgba(255,255,255,0.12);
-    backdrop-filter:blur(12px);
-    border-radius:25px;
-    padding:30px 20px;
-    margin:30px auto;
-    max-width:500px;
-    box-shadow:0 0 30px rgba(255,0,100,0.3);
-    border:1px solid rgba(255,255,255,0.2);
+
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:30px;
+padding:35px 25px;
+max-width:500px;
+margin:40px auto;
+box-shadow:0 0 40px rgba(255,0,120,.35);
+
+animation:appear 1.5s ease;
+
 }
+
 
 h1{
-    font-size:35px;
-    margin-bottom:15px;
+
+font-size:38px;
+margin-bottom:20px;
+
 }
+
 
 h2{
-    margin-bottom:15px;
+
+font-size:28px;
+margin-bottom:20px;
+
 }
+
 
 p{
-    font-size:18px;
-    line-height:1.7;
+
+font-size:18px;
+line-height:1.8;
+
 }
+
 
 button{
-    margin-top:25px;
-    padding:15px 35px;
-    border:none;
-    border-radius:50px;
-    background:#ff4d88;
-    color:white;
-    font-size:18px;
-    cursor:pointer;
-    box-shadow:0 0 20px #ff4d88;
+
+margin-top:30px;
+padding:16px 40px;
+border:none;
+border-radius:50px;
+background:#ff4f91;
+color:white;
+font-size:18px;
+cursor:pointer;
+box-shadow:0 0 25px #ff4f91;
+
 }
+
 
 button:hover{
-    transform:scale(1.05);
+
+transform:scale(1.08);
+
 }
+
 
 .hidden{
-    display:none;
+
+display:none;
+
 }
 
-.heart{
-    position:fixed;
-    bottom:-20px;
-    font-size:25px;
-    animation:float 5s linear infinite;
-}
-
-@keyframes float{
-    0%{
-        transform:translateY(0);
-        opacity:1;
-    }
-    100%{
-        transform:translateY(-110vh);
-        opacity:0;
-    }
-}
 
 .fade{
-    animation:fade 1.5s;
+
+animation:fade 2s ease;
+
 }
+
 
 @keyframes fade{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+
+from{
+opacity:0;
+transform:translateY(40px);
 }
 
-.final{
-    font-size:25px;
-    font-weight:bold;
-    color:#ffd1e3;
+to{
+opacity:1;
+transform:translateY(0);
 }
+
+}
+
+
+
+@keyframes appear{
+
+from{
+opacity:0;
+transform:scale(.8);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+
+
+.envelope{
+
+font-size:80px;
+animation:float 2s infinite alternate;
+
+}
+
+
+@keyframes float{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-15px);
+}
+
+}
+
+
+.heart{
+
+position:fixed;
+bottom:-20px;
+font-size:25px;
+animation:heartMove linear infinite;
+
+}
+
+
+@keyframes heartMove{
+
+0%{
+
+transform:translateY(0);
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-110vh);
+opacity:0;
+
+}
+
+}
+
+
+
+.glow{
+
+color:#ffd6e8;
+text-shadow:0 0 20px pink;
+
+}
+
+
 </style>
 
 </head>
 
+
 <body>
+
 
 <div class="container">
 
+
 <div class="card">
-<h1>For Madhu ❤️</h1>
+
+<div class="envelope">
+💌
+</div>
+
+<h1>
+For Madhu ❤️
+</h1>
+
 
 <p>
 Someone loves you more than words can ever explain...
 </p>
 
+
 <button onclick="openHeart()">
-Open My Heart 💌
+
+Open My Heart 💗
+
 </button>
 
+
 </div>
+<div id="letter" class="card hidden fade">
 
+<h2 class="glow">
+Madhu ❤️
+</h2>
 
-<div id="message" class="card hidden fade">
-
-<h2>Madhu ❤️</h2>
 
 <p>
+
 I know I really messed up...
-<br><br>
-
-I know sometimes my actions hurt you,
-and I know I am not perfect.
-
-But one thing I want you to know is,
-my love for you has always been real.
-
-You are not just a part of my life...
-you are the most beautiful chapter of it.
-
-Thank you for staying,
-thank you for understanding me,
-and thank you for being my Madhu.
 
 <br><br>
 
-I promise I will keep trying to become a better person for you.
+I know sometimes I make mistakes,
+and sometimes I don't express my feelings the way I should.
+
+<br><br>
+
+But one thing I want you to remember...
+
+<br><br>
+
+You are one of the most beautiful parts of my life.
+
+<br><br>
+
+Thank you for staying with me.
+Thank you for understanding me.
+Thank you for being my Madhu.
+
+<br><br>
+
+I am not perfect...
+
+but I promise I will always try to become a better version of myself for you.
+
 </p>
+
 
 <br>
 
-<p class="final">
-Forever your Gawar ❤️
+<p>
+Your annoying but forever yours 🤧❤️
 </p>
+
 
 </div>
 
 
-<div id="end" class="card hidden fade">
 
-<h2>One Last Thing ❤️</h2>
+<div id="ending" class="card hidden fade">
+
+
+<h2 class="glow">
+One Last Promise 🌙
+</h2>
+
 
 <p>
-No matter how many mistakes I make...
+
+No matter how many mistakes happen...
+
+<br><br>
+
+No matter how many fights come...
+
+<br><br>
 
 I will always choose you.
 
-Today, tomorrow and every day after that.
+<br><br>
 
-❤️
+Today.
+
+Tomorrow.
+
+And every day after that.
+
 </p>
+
+
+<br>
+
+
+<h1>
+Forever your Gawar ❤️
+</h1>
+
 
 </div>
 
@@ -188,36 +334,66 @@ Today, tomorrow and every day after that.
 
 <script>
 
+
 function openHeart(){
 
-document.getElementById("message").classList.remove("hidden");
 
-document.getElementById("end").classList.remove("hidden");
+document.getElementById("letter")
+.classList.remove("hidden");
 
-for(let i=0;i<25;i++){
+
+setTimeout(()=>{
+
+document.getElementById("ending")
+.classList.remove("hidden");
+
+
+window.scrollTo({
+
+top:document.body.scrollHeight,
+
+behavior:"smooth"
+
+});
+
+
+},2000);
+
+
+
+for(let i=0;i<35;i++){
+
 
 let heart=document.createElement("div");
 
+
 heart.className="heart";
+
 
 heart.innerHTML="❤️";
 
+
 heart.style.left=Math.random()*100+"vw";
 
-heart.style.animationDuration=(3+Math.random()*3)+"s";
+
+heart.style.animationDuration=
+(3+Math.random()*4)+"s";
+
 
 document.body.appendChild(heart);
 
-}
 
-window.scrollTo({
-top:document.body.scrollHeight,
-behavior:"smooth"
-});
 
 }
+
+
+
+}
+
+
 
 </script>
+
 
 </body>
 </html>
